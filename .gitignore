@@ -1,0 +1,51 @@
+# Environments & Dependencies
+venv/
+.venv/
+env/
+ENV/
+node_modules/
+frontend/node_modules/
+
+# Production Builds
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Databases & Logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+backend/woodplan.db
+
+# Secrets & Environment Variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# OS and Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Uploaded Files & Generated Plan Artifacts
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+backend/storage/pdfs/*
+!backend/storage/pdfs/.gitkeep
+backend/storage/diagrams/*
+!backend/storage/diagrams/.gitkeep

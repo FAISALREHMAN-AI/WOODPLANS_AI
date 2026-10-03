@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #020617;
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Blueprint Grid Pattern */
+.blueprint-grid {
+  background-color: #0b1a2c;
+  background-image: 
+    linear-gradient(rgba(42, 132, 203, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 132, 203, 0.15) 1px, transparent 1px),
+    linear-gradient(rgba(42, 132, 203, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 132, 203, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+}
+
+.blueprint-paper {
+  background-color: #f8fafc;
+  background-image: 
+    linear-gradient(rgba(148, 163, 184, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.2) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
