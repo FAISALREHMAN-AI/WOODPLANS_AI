@@ -1,8 +1,9 @@
 import React from 'react';
 import { Settings, Cpu, Database, Cloud, ShieldCheck, CheckCircle2, Server, Globe } from 'lucide-react';
+import { API_BASE } from '../../api/client';
 
 export const SettingsView: React.FC = () => {
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+  const apiUrl = API_BASE || window.location.origin;
 
   return (
     <div className="space-y-6 max-w-4xl mx-auto px-4 py-4">

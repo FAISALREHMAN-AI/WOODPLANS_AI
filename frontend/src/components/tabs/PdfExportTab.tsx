@@ -11,7 +11,7 @@ import {
   Boxes
 } from 'lucide-react';
 import { Project } from '../../types';
-import { apiClient } from '../../api/client';
+import { apiClient, API_BASE } from '../../api/client';
 
 interface PdfExportTabProps {
   project: Project;
@@ -24,7 +24,7 @@ export const PdfExportTab: React.FC<PdfExportTabProps> = ({ project }) => {
   const handleRegeneratePdf = async () => {
     setIsGenerating(true);
     try {
-      await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:8000'}/api/projects/${project.id}/generate-pdf`, {
+      await fetch(`${API_BASE}/api/projects/${project.id}/generate-pdf`, {
         method: 'POST'
       });
       // Force iframe refresh
